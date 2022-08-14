@@ -5,35 +5,34 @@ export default function Footer() {
   return (
     // <!-- This is an example component -->
     <div className="w-[100%] mx-auto mt-10">
-      <footer className="p-4 bg-white sm:p-6 dark:bg-gray-800">
+      <footer className="p-4 bg-[#131128] sm:p-6 dark:bg-gray-800">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <svg
-                className="fill-current h-8 w-8 mr-2"
-                width="54"
-                height="54"
-                viewBox="0 0 54 54"
-                xmlns="http://www.w3.org/2000/svg"
-                color="#14B8A6"
+              <a
+                href="/"
+                className="ml-[1rem]"
+                style={{
+                  fontWeight: "800",
+                  fontFamily: "sans-serif",
+                  fontSize: 20,
+                  color: "#6639e4",
+                }}
               >
-                <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-              </svg>
-              <span className="self-center text-xl font-semibold whitespace-nowrap text-teal-500">
-                Bitcoin
-              </span>
+                Bitcoin<span style={{ color: "#FF792E" }}>.</span>
+              </a>
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-teal-500">
+              <h3 className="mb-6 text-sm font-semibold uppercase text-[#6639e4]">
                 Resources
               </h3>
               <ul>
                 <li className="mb-4">
                   <Link
                     to="/"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
+                    className="text-white hover:underline dark:text-gray-400"
                   >
                     Contacts
                   </Link>
@@ -42,7 +41,7 @@ export default function Footer() {
                   <Link
                     to="/"
                     rel="nofollow"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
+                    className="text-white hover:underline dark:text-gray-400"
                   >
                     Tailwind CSS
                   </Link>
@@ -50,14 +49,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-teal-500">
+              <h3 className="mb-6 text-sm font-semibold uppercase text-[#6639e4]">
                 Follow us
               </h3>
               <ul>
                 <li className="mb-4">
                   <Link
                     to="/"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
+                    className="text-white hover:underline dark:text-gray-400"
                   >
                     Github
                   </Link>
@@ -65,7 +64,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
+                    className="text-white hover:underline dark:text-gray-400"
                   >
                     Discord
                   </Link>
@@ -73,14 +72,14 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="mb-6 text-sm font-semibold uppercase text-teal-500">
+              <h3 className="mb-6 text-sm font-semibold uppercase text-[#6639e4]">
                 Legal
               </h3>
               <ul>
                 <li className="mb-4">
                   <Link
                     to="/"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
+                    className="text-white hover:underline dark:text-gray-400"
                   >
                     Privacy Policy
                   </Link>
@@ -88,7 +87,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/"
-                    className="text-gray-600 hover:underline dark:text-gray-400"
+                    className="text-white hover:underline dark:text-gray-400"
                   >
                     Terms &amp; Conditions
                   </Link>
@@ -99,7 +98,7 @@ export default function Footer() {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-white sm:text-center dark:text-gray-400">
             © 2022{" "}
             <Link to="https://Contacts.com" className="hover:underline">
               Contacts™
@@ -109,7 +108,7 @@ export default function Footer() {
           <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <Link
               to="/"
-              className="text-gray-500 hover:text-teal-500 dark:hover:text-white"
+              className="text-white hover:text-[#6639e4] dark:hover:text-white"
             >
               <svg
                 className="w-5 h-5"
@@ -126,7 +125,7 @@ export default function Footer() {
             </Link>
             <Link
               to="/"
-              className="text-gray-500 hover:text-teal-500 dark:hover:text-white"
+              className="text-white hover:text-[#6639e4] dark:hover:text-white"
             >
               <svg
                 className="w-5 h-5"
@@ -143,7 +142,7 @@ export default function Footer() {
             </Link>
             <Link
               to="/"
-              className="text-gray-500 hover:text-teal-500 dark:hover:text-white"
+              className="text-white hover:text-[#6639e4] dark:hover:text-white"
             >
               <svg
                 className="w-5 h-5"
@@ -156,7 +155,7 @@ export default function Footer() {
             </Link>
             <Link
               to="/"
-              className="text-gray-500 hover:text-teal-500 dark:hover:text-white"
+              className="text-white hover:text-[#6639e4] dark:hover:text-white"
             >
               <svg
                 className="w-5 h-5"
@@ -173,7 +172,7 @@ export default function Footer() {
             </Link>
             <Link
               to="/"
-              className="text-gray-500 hover:text-teal-500 dark:hover:text-white"
+              className="text-white hover:text-[#6639e4] dark:hover:text-white"
             >
               <svg
                 className="w-5 h-5"

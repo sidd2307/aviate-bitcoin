@@ -5,7 +5,7 @@
   height: 60px;
   width: 90%;
   padding: 0.5rem 0rem;
-  background-color: #fff;
+  background-color: #131128;
   color: black;
   /* box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23); */
   justify-content: center;
@@ -20,22 +20,26 @@
 
 .navigation-menu {
   margin-left: auto;
+  background-color: #131128;
 }
 
 .navigation-menu ul {
   display: flex;
   padding: 0;
+  background-color: #131128;
 }
 
 .navigation-menu li {
   list-style-type: none;
   margin: 0 1rem;
+  background-color: #131128;
 }
 
 .navigation-menu li a {
   text-decoration: none;
   display: block;
   width: 100%;
+  color: white;
 }
 
 .hamburger {
@@ -44,7 +48,7 @@
   width: 40px;
   padding: 0.5rem;
   border-radius: 50%;
-  background-color: #3d7fff;
+  background-color: #6639e4;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   position: absolute;
@@ -55,7 +59,7 @@
 }
 
 .hamburger:hover {
-  background-color: #759ef0;
+  background-color: #6639e4;
 }
 
 .speciallia {
@@ -97,8 +101,8 @@
     top: 60px;
     left: 0;
     width: 100%;
-    height: calc(100vh - 60px);
-    background-color: white;
+    /* height: calc(100vh - 60px); */
+    background-color: #131128;
     border-top: 1px solid black;
     display: none;
   }
@@ -109,7 +113,7 @@
   }
 
   .navigation-menu li a {
-    /* color: black; */
+    color: white;
     width: 100%;
     padding: 1.5rem 0;
   }
