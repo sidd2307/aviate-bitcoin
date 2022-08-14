@@ -13,6 +13,14 @@ export default function Hero() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
               nulla suspendisse tortor aenean dis placerat.
             </p>
+            <div className="flex flex-row mt-8 gap-6 flex-wrap">
+              <button className="rounded-full bg-[#6639e4] h-[60px] w-[100vw] md:w-[180px] text-white font-bold text-xl hover:bg-[#282454] hover:h-[50px] hover:w-[170px] ease-in duration-200">
+                Read More
+              </button>
+              <button className="rounded-full bg-[#282454] h-[60px] w-[100vw] md:w-[180px] text-white font-bold text-xl hover:bg-[#6639e4] hover:h-[50px] hover:w-[170px] ease-in duration-200">
+                Read More
+              </button>
+            </div>
           </div>
         </div>
       </div>

@@ -45,28 +45,28 @@ export default function NavBar() {
         >
           <ul>
             <li>
-              <a style={{ fontSize: 14, paddingTop: 10 }} href="/">
+              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
                 Doctors
-              </a>
+              </Link>
             </li>
             <li>
-              <a style={{ fontSize: 14, paddingTop: 10 }} href="/">
+              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
                 Hospitals
-              </a>
+              </Link>
             </li>
             <li>
-              <a style={{ fontSize: 14, paddingTop: 10 }} href="/">
+              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a style={{ fontSize: 14, paddingTop: 10 }} href="/">
+              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
                 Log In
-              </a>
+              </Link>
             </li>
             <li>
               {/* <div className="speciallia">
-                <a href="/">Sign Up</a>
+                <Link to="/">Sign Up</Link>
               </div> */}
             </li>
           </ul>
