@@ -73,7 +73,7 @@
   padding-top: 10px !important;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 740px) {
   .speciallia {
     background-color: #ff792e;
     width: 100% !important;
@@ -93,6 +93,7 @@
   }
   .hamburger {
     display: block;
+    margin-top: 20px;
   }
 
   .navigation-menu ul {
@@ -110,6 +111,7 @@
   .navigation-menu li {
     text-align: center;
     margin: 0;
+    margin-bottom: 10px;
   }
 
   .navigation-menu li a {

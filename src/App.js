@@ -6,15 +6,18 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        {/* <Route path='/compose' element={<Compose />} />
+
+    <div className='bg-[#131128]'>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          {/* <Route path='/compose' element={<Compose />} />
         <Route path='/allmsg' element={<ViewAllMsgs />} /> */}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 

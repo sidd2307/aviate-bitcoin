@@ -5,7 +5,7 @@ export default function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <div className="bg-[#131128]">
-      <nav className="relative flex items-center h-[60px] w-[90%] px-[0.5rem] py-[0rem] bg-[#131128] justify-start ml-auto mr-auto">
+      <nav className="relative flex items-center h-[60px] w-[90%] px-[0.5rem] py-[0rem] bg-[#131128] justify-start ml-auto mr-auto pt-10 mb-10">
         <Link
           to="/"
           className="ml-[1rem]"
@@ -65,9 +65,9 @@ export default function NavBar() {
               </Link>
             </li>
             <li>
-              {/* <div className="speciallia">
-                <Link to="/">Sign Up</Link>
-              </div> */}
+              <button className="rounded-full bg-[#6639e4] h-[60px] w-[50vw] sm:w-[180px] text-white font-semibold text-xl hover:bg-[#282454] hover:h-[50px] hover:w-[170px] ease-in duration-200">
+                Read More
+              </button>
             </li>
           </ul>
         </div>
