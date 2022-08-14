@@ -46,27 +46,22 @@ export default function NavBar() {
           <ul>
             <li>
               <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
-                Doctors
+                Blockchains
               </Link>
             </li>
             <li>
               <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
-                Hospitals
+                Bitcoins
               </Link>
             </li>
             <li>
-              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
-                About Us
-              </Link>
+              <button className="rounded-full bg-[#6639e4] h-[50px] w-[50vw] sm:w-[150px] text-white font-semibold text-xl hover:bg-[#282454] hover:h-[50px] hover:w-[170px] ease-in duration-200">
+                Exchange
+              </button>
             </li>
             <li>
-              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
-                Log In
-              </Link>
-            </li>
-            <li>
-              <button className="rounded-full bg-[#6639e4] h-[60px] w-[50vw] sm:w-[180px] text-white font-semibold text-xl hover:bg-[#282454] hover:h-[50px] hover:w-[170px] ease-in duration-200">
-                Read More
+              <button className="rounded-full bg-[#6639e4] h-[50px] w-[50vw] sm:w-[150px] text-white font-semibold text-xl hover:bg-[#282454] hover:h-[50px] hover:w-[170px] ease-in duration-200">
+                Trends
               </button>
             </li>
           </ul>
