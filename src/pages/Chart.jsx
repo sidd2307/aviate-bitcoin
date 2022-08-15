@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../components/Hero";
 import Information from "../components/Information";
 import {
@@ -11,8 +11,24 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import axios from "axios";
+import { CHART_API } from "../api";
 
 export default function Chart() {
+  const [timespan, settimespan] = useState(5);
+  const [plotdata, setplotdata] = useState(null);
+  useEffect(() => {
+    axios
+      .get(
+        `${CHART_API}/?timespan=${timespan}weeks&rollingAverage=8hours&format=json`
+      )
+      .then((response) => {
+        setplotdata(response.data["values"]);
+      });
+  }, [timespan]);
+
+  console.log(plotdata);
+
   const data = [
     {
       name: "Page A",
@@ -58,31 +74,31 @@ export default function Chart() {
     },
   ];
   return (
-    <div className="bg-[#131128] text-white mt-[100px]">
+    <div className="bg-[#131128] text-white mt-[100px] snap-x">
       <ResponsiveContainer width="90%" aspect={4 / 1.5} className="m-auto">
         <LineChart
           width={500}
           height={300}
-          data={data}
+          data={plotdata}
           margin={{
             top: 5,
             right: 30,
-            left: 20,
+            left: -10,
             bottom: 5,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
+          <XAxis dataKey="x" />
           <YAxis />
           <Tooltip />
           <Legend />
           <Line
             type="monotone"
-            dataKey="pv"
+            dataKey="y"
             stroke="#6639E4"
             activeDot={{ r: 8 }}
           />
-          <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+          {/* <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}
         </LineChart>
       </ResponsiveContainer>
     </div>
