@@ -73,9 +73,29 @@ export default function Chart() {
       amt: 2100,
     },
   ];
+
+  // const handleChange = (event) => {
+  //   settimespan(event.target.value);
+  // };
+
   return (
-    <div className="bg-[#131128] text-white mt-[100px] snap-x">
-      <ResponsiveContainer width="90%" aspect={4 / 1.5} className="m-auto">
+    <div className="bg-[#131128] text-white mt-[100px]">
+      {/* <div className="w-[80%] m-auto mb-5">
+        <label>Choose a TimeSpan in weeks:</label>
+
+        <select value={timespan} onChange={handleChange}>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div> */}
+
+      <div className="w-[85%] m-auto mb-5 font-bold text-3xl xl:text-6xl">
+        Transaction rate chart for last 8 weeks
+      </div>
+
+      <ResponsiveContainer width="90%" aspect={4 / 1.5} className="m-auto ">
         <LineChart
           width={500}
           height={300}
