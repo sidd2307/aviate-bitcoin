@@ -45,12 +45,12 @@ export default function NavBar() {
         >
           <ul>
             <li>
-              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
+              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/blockchain">
                 Blockchains
               </Link>
             </li>
             <li>
-              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/">
+              <Link style={{ fontSize: 14, paddingTop: 10 }} to="/bitcoin">
                 Bitcoins
               </Link>
             </li>
