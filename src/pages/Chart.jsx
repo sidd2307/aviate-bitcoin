@@ -20,7 +20,7 @@ export default function Chart() {
   useEffect(() => {
     axios
       .get(
-        `${CHART_API}/?timespan=${timespan}weeks&rollingAverage=8hours&format=json`
+        `${CHART_API}/?timespan=${timespan}weeks&rollingAverage=8hours&format=json&cors=true`
       )
       .then((response) => {
         setplotdata(response.data["values"]);
